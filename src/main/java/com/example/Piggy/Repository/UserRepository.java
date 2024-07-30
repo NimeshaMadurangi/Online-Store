@@ -1,4 +1,7 @@
 package com.example.Piggy.Repository;
 
-public interface UserRepository {
+import com.example.Piggy.Model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }
